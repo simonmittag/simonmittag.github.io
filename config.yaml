@@ -1,0 +1,223 @@
+baseURL: "https://www.simonmittag.com"
+languageCode: "en-us"
+title: "Simon Mittag"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+
+
+params:
+  title: "Simon Mittag"
+  description: Simon Mittag
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+  disableThemeToggle: true
+  defaultTheme: "light"
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+  
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Simon Mittag" # Brand name for the brand | default is the title variable
+    disableSearch: true
+    # searchPlaceholder: "Search"
+    menus:
+      disableAbout: false
+      disableExperience: true
+      disableEducation: true
+      disableProjects: false
+      disableAchievements: false
+      disableGallery: true
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Simon Mittag"
+    subtitle: "I'm a software engineer"
+    content: "Open source contributor, terminal enthusiast, author of cli tools, micro-services survivor and Golang aficionado."
+    image: /images/simon.jpg
+    bottomImage:
+      enable: true
+      roundImage: true # Make hero image circular | default false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://www.github.com/simonmittag
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/simon-mittag-17b52020
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/simon.jpg"
+    content: |-
+      I'm a veteran software engineer writing their first lines of code as an 1980s kid on a C64 and have worked on many 
+      platforms, using different 3GL programming languages over time. A humble sysadmin in the 1990s, 
+      then a Java engineer during the first dot com boom, working on web applications for Dresdner Bank 
+      in Germany and later for Telstra, Allianz, News Corp, ABC and the ATO in Australia.
+
+      During the 2010's I started working on mobile apps, which took me to several fast growing startups in Southeast Asia. 
+      Building a system from the ground up that rapidly scaled to millions of users taught me some (painful) lessons
+      about micro-services, end-user sessions, HTTP and networks and lead to the creation of [my current pet project](https://www.j8a.io).
+      
+      After several years of travel, I'm now back in Australia and in a management role, but always find myself 
+      returning to my software engineering roots. As of 2020, I'm mainly programming in Golang and You'll find me 
+      happily devouring my slice of pizza at the [local user group](https://www.meetup.com/en-AU/golang-syd/).
+    skills:
+      enable: false
+
+  # Experience
+  experience:
+    enable: false
+    # title: "Custom Name"
+   
+  # Achievements
+  achievements:
+    enable: true
+    title: "Clippings & Mentions"
+    items:
+      - title: Linux Magazin Germany (11/2022)
+        content: Terminal-UI-Tool Wtf individualisieren (How to customize wtf with p0d to detect line speed).
+        url: https://www.linux-magazin.de/ausgaben/2022/11/snapshot/
+      - title: J8a introduction to golang-syd (06/2022)
+        content: An introduction to J8a I gave to golang-syd at Microsoft reactor.
+        url: https://youtu.be/Z3JFVDR50bY
+
+  # projects
+  projects:
+    enable: true
+    title: "Open Source"
+    items:
+      - title: J8a
+        content: A fast, secure, efficient and lightweight reverse-proxy and API gateway for micro-services.
+        image: /images/j8alogo.svg
+        featured:
+          name: Demo
+          link: https://www.j8a.io
+        badges:
+          - "http"
+          - "tls"
+          - "golang"
+          - "micro-services"
+          - "reverse-proxy"
+          - "api-gateway"
+        links:
+          - icon: fa fa-envelope
+            url: mailto:?subject=J8a&body=Check%20it%20out:%20https%3a%2f%2fj8a.io
+          - icon: fab fa-github
+            url: https://github.com/simonmittag/j8a
+
+      - title: p0d
+        content: p0d is a cli based speed and HTTP performance testing tool for Linux and Darwin operating systems.
+        image: /images/p0d_80.png
+        badges:
+          - "cli"
+          - "performance"
+          - "http"
+          - "tls"
+          - "speedtest"
+        links:
+          - icon: fa fa-envelope
+            url: mailto:?subject=p0d&body=Check%20it%20out:%20https%3a%2f%2fgithub.com%2fsimonmittag%2fp0d
+          - icon: fab fa-github
+            url: https://github.com/simonmittag/p0d
+      - title: pwt
+        content: pwt ("port wait") waits for you until a tcp socket, aka port becomes available and exits cleanly once it does. Designed for continuous integration scripts,
+        image: /images/pwt.png
+        badges:
+          - "cli"
+          - "ci/cd"
+          - "http"
+          - "testing"
+          - "readyness"
+        links:
+          - icon: fa fa-envelope
+            url: mailto:?subject=pwt&body=Check%20it%20out:%20https%3a%2f%2fgithub.com%2fsimonmittag%2fpwt
+          - icon: fab fa-github
+            url: https://github.com/simonmittag/pwt
+
+  #Contact
+  contact:
+    enable: true
+    title: "Get In Touch"
+    content: Have we met? If you want to (re)connect
+    email: simonmittag@gmail.com
+    btnName: Mail me
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+
+  footer:
+     socialNetworks:
+      github: https://github.com
+      linkedin: https://linkedin.com
+    
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "but, why would anyone want to?"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
