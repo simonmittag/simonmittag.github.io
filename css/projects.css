@@ -12,9 +12,10 @@
 #projects .badge {
     background-color: var(--background-color) !important;
     font-family: "Alata", sans-serif;
-    font-size: 1.1rem;
+    font-size: 1em;
     color: var(--text-color) !important;
-    margin: 0 1%;
+    line-height: 1em;
+    margin: 1% 1%;
 }
 
 #projects .card {
