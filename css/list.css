@@ -22,6 +22,11 @@
 
 #list-page .card-text * {
     background-color: var(--secondary-color) !important;
+    margin-left:1px;
+}
+
+#list-page .card-title * {
+    margin-left:1px;
 }
 
 #list-page .post-footer {
