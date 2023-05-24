@@ -52,6 +52,14 @@
     transition: all 0.3s ease-out;
 }
 
+#projects .card-title {
+    margin-left:1px;
+}
+
+#projects .card-text {
+    margin-left:1px;
+}
+
 #projects .card-img-top {
     transition: transform 0.5s;
     padding: 1rem;
