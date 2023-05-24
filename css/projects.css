@@ -54,7 +54,7 @@
 
 #projects .card-img-top {
     transition: transform 0.3s;
-    padding: 20px;
+    padding: 1rem;
 }
 
 #projects .float-end .btn {
