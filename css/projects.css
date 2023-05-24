@@ -12,7 +12,7 @@
 #projects .badge {
     background-color: var(--background-color) !important;
     font-family: "Alata", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--text-color) !important;
     margin: 0 1%;
 }
