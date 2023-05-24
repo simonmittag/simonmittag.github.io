@@ -11,6 +11,7 @@
 
 #projects .badge {
     background-color: var(--background-color) !important;
+    font-family: "Alata", sans-serif;
     color: var(--text-color) !important;
     margin: 0 1%;
 }
