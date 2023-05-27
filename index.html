@@ -798,7 +798,10 @@ Simon Mittag
                         </div>
                         <h5 class="card-title bg-transparent mt-1">J8a</h5>
                         <div class="card-text bg-transparent secondary-font">
-                            A fast, secure, efficient and lightweight reverse-proxy and API gateway for micro-services.
+                            A production grade, fast, secure, efficient and lightweight reverse-proxy and API gateway for micro-services, based on Golang&#39;s standard library.
+
+I created this project after working on two separate micro-service deployments to address various issues I was facing at the time. The project is best described as a lightweight API gateway.
+
                         </div>
                     </div>
                     
@@ -851,7 +854,10 @@ Simon Mittag
                         </div>
                         <h5 class="card-title bg-transparent mt-1">p0d</h5>
                         <div class="card-text bg-transparent secondary-font">
-                            p0d is a cli based speed and HTTP performance testing tool for Linux and Darwin operating systems.
+                            p0d is a cli based speed and HTTP performance testing tool for Linux and Darwin operating systems. 
+
+One of it&#39;s design goals is to record enough system telemetry data to put performance tests into meaningful context.
+
                         </div>
                     </div>
                     
@@ -908,7 +914,10 @@ Simon Mittag
                         </div>
                         <h5 class="card-title bg-transparent mt-1">l0la</h5>
                         <div class="card-text bg-transparent secondary-font">
-                            l0la is a sidecar cli utility to monitor vital stats of other processes on OSX at development time. It combines the output of lsof, ps and netstat, then monitors these values while active
+                            l0la is a sidecar utility for the cli to attach to a `pid` and monitor it&#39;s vital stats at development time. 
+
+It combines the output of lsof, ps and netstat, then monitors these values over time while active
+
                         </div>
                     </div>
                     
@@ -961,7 +970,10 @@ Simon Mittag
                         </div>
                         <h5 class="card-title bg-transparent mt-1">pwt</h5>
                         <div class="card-text bg-transparent secondary-font">
-                            pwt (&#34;port wait&#34;) waits for you until a tcp socket, aka port becomes available and exits cleanly once it does. Designed for continuous integration scripts,
+                            pwt (&#34;port wait&#34;) is a cli tool for your ci/cd pipeline that acts as a readyness or liveness probe. It will wait for servers to start listening on a specified port, then exit cleanly. 
+
+It&#39;s design goal is to make the `wait` command redundant and waiting for servers to start the right way.
+
                         </div>
                     </div>
                     
